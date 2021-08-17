@@ -54,9 +54,9 @@ $(function() {
         }, delayVal);
     });
 
-    // setTimeout(() => {
-    //     $('html,body').animate({ scrollTop: $('.cars').offset().top + "px" }, { duration: 1E3 });
-    // }, 5200);
+    setTimeout(() => {
+        $('html,body').animate({ scrollTop: $('.btns-marks').offset().top + "px" }, { duration: 1E3 });
+    }, 5200);
 
     $('.btns').each(function() {
         $(this).children('label').click(function() {
