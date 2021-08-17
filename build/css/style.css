@@ -727,6 +727,7 @@ header.header-show {
   .car-bottom span {
     text-align: left;
     display: block;
+    width: auto;
     font-weight: 500;
     font-size: 9px;
     line-height: 100%;
@@ -741,8 +742,8 @@ header.header-show {
 .btns.cars-list label:first-child {
   margin-right: 22px; }
 
-.cars-list__item:hover .car-img,
-.cars-list__item.active.car-img {
+.btns.cars-list .cars-list__item:hover .car-img,
+.btns.cars-list .cars-list__item.active .car-img {
   border-color: #1F77FC; }
 
 .cars-list__item:hover .car-img::after,
@@ -764,6 +765,12 @@ header.header-show {
   line-height: 100%;
   color: #747474;
   margin-bottom: 15px; }
+  .agree a {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+    color: #747474;
+    text-decoration: underline; }
 
 .butphone {
   display: block;
@@ -817,6 +824,15 @@ header.header-show {
         flex-shrink: 0; }
   .message-box {
     padding: 55px 52px 87px 52px; } }
+
+@media screen and (max-width: 920px) {
+  .btns.cars-list .cars-list__item {
+    max-width: 100%;
+    width: 45%; }
+  .btns.cars-list .cars-list__item:nth-child(3n) {
+    margin-right: 22px; }
+  .btns.cars-list .cars-list__item:nth-child(2n) {
+    margin-right: 0; } }
 
 @media screen and (max-width: 850px) {
   .phone-worktime {
@@ -912,6 +928,16 @@ header.header-show {
   .address {
     display: none; } }
 
+@media screen and (max-width: 600px) {
+  .btns.cars-list .cars-list__item {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0; }
+  .btns.cars-list label:first-child {
+    margin-right: 0; }
+  .btns.cars-list .cars-list__item:nth-child(3n) {
+    margin-right: 0; } }
+
 @media screen and (max-width: 500px) {
   .btns {
     -webkit-box-orient: vertical;
@@ -957,6 +983,14 @@ header.header-show {
   .btns a {
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    padding: 10px 10px 10px 10px; } }
+    padding: 10px 10px 10px 10px; }
+  .agree {
+    margin-left: -48px;
+    margin-bottom: 18px;
+    margin-top: 18px; }
+  .form-request input {
+    padding: 0 15px; }
+  .form-request {
+    margin: 0 0 0 -54px; } }
 
 /*# sourceMappingURL=../sourcemaps/style.css.map */

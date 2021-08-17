@@ -60,7 +60,7 @@ $(function() {
 
     $('.btns').each(function() {
         $(this).children('label').click(function() {
-            $(this).parents('.btns').addClass('btns-checked');
+            // $(this).parents('.btns').addClass('btns-checked');
             var elemThis = $(this).closest('.message-item-m');
             $('.js-final-message').removeClass('vis');
             $('.js-final-message').removeClass('visF');
@@ -73,9 +73,9 @@ $(function() {
             // console.log(valueMoney);
             $(this).closest('.messag-elem').next('.message-y').find('.message-text').text(valueMoney);
 
-            $(this).closest('.message-item').next('.message-item').removeClass('vis visF');
+            $(this).closest('.messag-elem').next('.messag-elem').removeClass('vis visF');
 
-            $(this).closest('.message-item').next('.message-item+.message-item').removeClass('vis visF');
+            $(this).closest('.messag-elem').next('.messag-elem+.messag-elem').removeClass('vis visF');
 
 
             setTimeout(() => {
