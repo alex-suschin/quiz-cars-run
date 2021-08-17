@@ -58,6 +58,17 @@ $(function() {
         $('html,body').animate({ scrollTop: $('.btns-marks').offset().top + "px" }, { duration: 1E3 });
     }, 5200);
 
+    $('.btns-marks label').click(function() {
+        $('.js-message--check-money').removeClass('vis visF');
+        $('.js-car-check').removeClass('vis visF');
+        $('.js-money-check').removeClass('vis visF');
+    });
+
+    $('.cars-list label').click(function() {
+        $('.js-message--check-money').removeClass('vis visF');
+        $('.js-money-check').removeClass('vis visF');
+    });
+
     $('.btns').each(function() {
         $(this).children('label').click(function() {
             // $(this).parents('.btns').addClass('btns-checked');
@@ -132,6 +143,8 @@ $(function() {
             }
         });
     });
+
+
 
     // $('.btns label').click(function() {
     //     $('.js-final-message').removeClass('vis');
